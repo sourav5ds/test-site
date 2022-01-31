@@ -5,9 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .area{
+            width: 200px;
+            margin: 100px 30%;
+        }
+        .ghor{
+            height:60px;
+            width:60px;
+            border: 3px solid purple;
+            float:left;
+            font-size: 50px;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Test Site</h1>
-    <h3>hey good morning sir</h3>
+    <div class="area">
+        <p>Javascript</p>
+        <div class="ghor"></div>
+        <div class="ghor"></div>
+        <div class="ghor"></div>
+
+        <div class="ghor"></div>
+        <div class="ghor"></div>
+        <div class="ghor"></div>
+
+        <div class="ghor"></div>
+        <div class="ghor"></div>
+        <div class="ghor"></div>
+    </div>
+    <script src="jquery-3.6.0.slim.min.js"></script>   
+    <script>
+        var count = 0;
+        $("p").text("jQuery");
+        $(".ghor").click(function(){
+            count = count+1;
+            if(count%2==0){
+            $(this).text("X");
+        }
+            else{
+                $(this).text("0");
+            }
+        });
+
+    </script>
 </body>
 </html>
